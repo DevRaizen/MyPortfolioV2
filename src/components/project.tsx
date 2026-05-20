@@ -3,13 +3,17 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import coreatelier from "../assets/coreatelier.png";
+import tval from "../assets/Tval.webp";
+import mayweather from "../assets/MayWeather.webp";
+
 const projects = [
   {
     id: 1,
     title: "Core Atelier",
     description:
       "A Web-based booking system that streamlines client appointments and business operations.",
-    img: "/src/assets/coreatelier.png",
+    img: coreatelier,
     stack: ["WordPress", "Tailwind CSS", "Amelia", "ACF", "WooCommerce"],
   },
   {
@@ -17,7 +21,7 @@ const projects = [
     title: "Teacher Evaluation System",
     description:
       "A Faculty evaluation system for students to rate teachers and generate feedback reports.",
-    img: "/src/assets/Tval.webp",
+    img: tval,
     stack: ["Angular", "Tailwind CSS", "Node.js", "PHP", "Python", "MySQL"],
   },
   {
@@ -25,7 +29,7 @@ const projects = [
     title: "MayWeather",
     description:
       "A weather app with real-time updates via API integration and a clean responsive UI.",
-    img: "/src/assets/MayWeather.webp",
+    img: mayweather,
     stack: ["Ionic", "Tailwind CSS", "Node.js", "Sqlite"],
   },
 ];

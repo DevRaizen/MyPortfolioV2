@@ -1,11 +1,13 @@
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import pikachu from "../assets/pikachu-pokemon.gif";
+
 function Contact() {
   return (
     <div className="contact p-4 border border-gray-300 shadow-lg rounded-lg">
       <div className="flex flex-row justify-between p-2">
         <h2 className="text-lg justify-center font-bold mt-1">Contact Me</h2>
         <img
-          src="/src/assets/pikachu-pokemon.gif"
+          src={pikachu}
           alt="Pikachu GIF"
           className="w-15 h-10 "
         />
