@@ -1,4 +1,3 @@
-
 import Header from "./components/header";
 import "./App.css";
 import Hero from "./components/hero";
@@ -8,15 +7,18 @@ import Experience from "./components/experience";
 import CTA from "./components/cta";
 import Contact from "./components/contact";
 function App() {
-
   return (
     <>
       <Header />
-      <div className="grid grid-cols-2 pt-4 max-w-7xl mx-auto w-full gap-4">
+
+      {/* HERO + PROJECTS */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-4 max-w-7xl mx-auto w-full ">
         <Hero />
         <Projects />
       </div>
-      <div className="grid grid-cols-4 pt-4 max-w-7xl mx-auto w-full gap-4">
+
+      {/* STACK + EXPERIENCE + CTA + CONTACT */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 max-w-7xl mx-auto w-full ">
         <Stack />
         <Experience />
         <CTA />
