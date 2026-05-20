@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Header from "./components/header";
 import "./App.css";
 import Hero from "./components/hero";
@@ -8,7 +8,6 @@ import Experience from "./components/experience";
 import CTA from "./components/cta";
 import Contact from "./components/contact";
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
