@@ -1,3 +1,4 @@
+import CV from "../assets/Shawn Michael Bulos - FullStack CV.pdf"
 function Header() {
   return (
     <div className="header flex items-center justify-between mt-4 p-4 text-white max-w-7xl mx-auto w-full border border-gray-300 shadow-lg rounded-lg  ">
@@ -26,9 +27,14 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Download CV
-      </button>
+       <a
+        href={CV}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        View CV
+      </a>
     </div>
   );
 }

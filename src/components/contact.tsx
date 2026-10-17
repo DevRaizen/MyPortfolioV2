@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import pikachu from "../assets/pikachu-pokemon.gif";
-
+import { SiGmail } from "react-icons/si";
 function Contact() {
   return (
     <div className="contact p-4 border border-gray-300 shadow-lg rounded-lg">
@@ -32,7 +32,7 @@ function Contact() {
           rel="noopener noreferrer"
           className="flex items-center gap-3 p-2 "
         >
-          <FaLinkedin className="text-xl text-blue-600" />
+          <FaLinkedin className="text-xl text-black" />
           <span>LinkedIn</span>
         </a>
 
@@ -43,8 +43,17 @@ function Contact() {
           rel="noopener noreferrer"
           className="flex items-center gap-3 p-2"
         >
-          <FaFacebook className="text-xl text-blue-500" />
+          <FaFacebook className="text-xl text-black" />
           <span>Facebook</span>
+        </a>
+
+        {/* Gmail */}
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=shawnbulos03@gmail.com"
+          className="flex items-center gap-3 p-2"
+        >
+          <SiGmail className="text-xl text-black" />
+          <span>Gmail</span>
         </a>
       </div>
     </div>
