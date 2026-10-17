@@ -7,6 +7,7 @@ import coreatelier from "../assets/coreatelier.png";
 import tval from "../assets/Tval.webp";
 import mayweather from "../assets/MayWeather.webp";
 
+
 const projects = [
   {
     id: 1,
@@ -15,6 +16,7 @@ const projects = [
       "A Web-based booking system that streamlines client appointments and business operations.",
     img: coreatelier,
     stack: ["WordPress", "Tailwind CSS", "Amelia", "ACF", "WooCommerce"],
+    link: "https://coreatelierpilates.com/"
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ const projects = [
       "A Faculty evaluation system for students to rate teachers and generate feedback reports.",
     img: tval,
     stack: ["Angular", "Tailwind CSS", "Node.js", "PHP", "Python", "MySQL"],
+    link: "https://evaluation-cgv.pages.dev/login"
   },
   {
     id: 3,
@@ -55,7 +58,7 @@ function Projects() {
       >
         {projects.map((project) => (
           <SwiperSlide className="cursor-pointer" key={project.id}>
-            <div className="p-4 rounded-lg grid grid-cols-2 gap-4">
+            <a href={project.link} className="p-4 rounded-lg grid grid-cols-2 gap-4">
               <div className="w-full h-48 overflow-hidden rounded-md">
                 <img
                   src={project.img}
@@ -80,7 +83,7 @@ function Projects() {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>

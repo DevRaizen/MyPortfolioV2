@@ -49,12 +49,14 @@ function CTA() {
           <p className="mt-2 text-gray-700">"{current.comment}"</p>
         </div>
       </div>
-      <div className="flex flex-col border border-gray-300 shadow-lg p-5 rounded-lg ">
+
+      <div className="flex flex-col border border-gray-300 shadow-lg p-3 rounded-lg">
         <span className="text-md font-bold mb-3">Development Activity</span>
-        <img
-          src="https://streak-stats.demolab.com?user=devraizen&theme=tokyonight"
-          alt="GitHub Streak"
-        />
+          <img
+  src="https://github-readme-stats.vercel.app/api?username=DevRaizen&show_icons=true&hide_border=true&bg_color=FFFFFF&title_color=111827&text_color=4B5563&icon_color=3B82F6"
+    alt="GitHub stats"
+    className="w-full"
+  />
       </div>
     </div>
   );
