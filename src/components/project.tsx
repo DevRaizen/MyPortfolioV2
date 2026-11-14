@@ -7,7 +7,7 @@ import coreatelier from "../assets/coreatelier.png";
 import tval from "../assets/Tval.webp";
 import mayweather from "../assets/MayWeather.webp";
 
-const projects = [
+export const projects = [
   {
     id: 1,
     title: "Core Atelier",

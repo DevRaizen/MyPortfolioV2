@@ -108,3 +108,13 @@ body{background:#0a0a0a;color:#f5f5f5}
 .fx-banner{background:#fafafa;color:#0a0a0a}
 .fx-banner .text-gray-400{color:#737373}
 @media (min-width:1024px){.fx-card{background:rgba(17,17,17,.72)}}
+
+/* ===== Gallery ===== */
+.fx-gslide{position:absolute;inset:0;opacity:0;transition:opacity .9s}
+.fx-gslide.on{opacity:1}
+.fx-gslide img{transform:scale(1.12);transition:transform 5s linear,filter .5s}
+.fx-gslide.on img{transform:scale(1)}
+@media (hover:hover){
+  .fx-gal .fx-photo{filter:grayscale(1) contrast(1.05)}
+  .fx-gal:hover .fx-photo{filter:none}
+}

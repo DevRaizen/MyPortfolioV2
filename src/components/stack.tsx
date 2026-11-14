@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-const stackItems = {
+export const stackItems = {
   Framework: ["Angular", "React", "Tailwind CSS"],
   Frontend: ["HTML", "CSS", "JavaScript", "TypeScript"],
   Backend: ["Node.js", "Python", "Java"],

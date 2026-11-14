@@ -1,11 +1,12 @@
-function Experience() {
-const jobs = [
+export const jobs = [
   {
     role: "Junior Developer Intern",
     company: "Greydient Lab",
     period: "Feb – May 2026",
   },
 ];
+
+function Experience() {
  
   return (
     <div data-fx className="fx-card border border-gray-300 shadow-lg pt-4 rounded-lg ">
