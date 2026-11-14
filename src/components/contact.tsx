@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaFacebook, FaRegCopy } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook} from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import pikachu from "../assets/pikachu-pokemon.gif";
 
@@ -42,20 +42,6 @@ function Contact() {
     return () => clearTimeout(t);
   }, [copied]);
 
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(EMAIL);
-    } catch {
-      // fallback for browsers without clipboard access
-      const t = document.createElement("textarea");
-      t.value = EMAIL;
-      document.body.appendChild(t);
-      t.select();
-      document.execCommand("copy");
-      t.remove();
-    }
-    setCopied(true);
-  };
 
   return (
     <div

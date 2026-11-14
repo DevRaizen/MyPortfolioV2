@@ -4,7 +4,7 @@ import setup from "../assets/gallery-setup.jpg";
 import greenhouse from "../assets/gallery-greenhouse.jpg";
 import team from "../assets/gallery-team.jpg";
 
-const EMAIL_LINK =
+//const EMAIL_LINK =
   "https://mail.google.com/mail/?view=cm&fs=1&to=shawnbulos03@gmail.com";
 
 const photos = [
@@ -140,7 +140,7 @@ function CTA() {
         </a>
       </div>
         */}
-        
+
       <Gallery />
     </div>
   );
