@@ -7,7 +7,6 @@ import coreatelier from "../assets/coreatelier.png";
 import tval from "../assets/Tval.webp";
 import mayweather from "../assets/MayWeather.webp";
 
-
 const projects = [
   {
     id: 1,
@@ -42,7 +41,7 @@ function Projects() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <div className="border border-gray-300 shadow-lg pt-4 rounded-lg overflow-hidden">
+    <div data-fx="right" className="fx-card border border-gray-300 shadow-lg pt-4 rounded-lg overflow-hidden">
       <span className="text-lg text-black font-bold px-4">
         Featured Projects
       </span>
@@ -59,7 +58,7 @@ function Projects() {
         {projects.map((project) => (
           <SwiperSlide className="cursor-pointer" key={project.id}>
             <a href={project.link} className="p-4 rounded-lg grid grid-cols-2 gap-4">
-              <div className="w-full h-48 overflow-hidden rounded-md">
+              <div className="fx-shot w-full h-48 overflow-hidden rounded-md">
                 <img
                   src={project.img}
                   alt={project.title}
@@ -67,7 +66,7 @@ function Projects() {
                 />
               </div>
 
-              <div className="flex flex-col justify-center gap-2">
+              <div className="fx-info flex flex-col justify-center gap-2">
                 <h3 className="text-lg font-bold text-center">
                   {project.title}
                 </h3>
@@ -89,7 +88,8 @@ function Projects() {
       </Swiper>
 
       {/* Bottom banner */}
-      <div className="flex items-center justify-between gap-3 bg-gray-900 text-white px-4 py-2.5">
+      <div className="fx-banner relative flex items-center justify-between gap-3 px-4 py-2.5">
+        <div key={active} className="fx-prog" />
         <p className="text-sm font-medium truncate">
           <span className="text-gray-400">
             Project {active + 1} of {projects.length}:
@@ -104,7 +104,7 @@ function Projects() {
               onClick={() => swiper?.slideTo(i)}
               aria-label={`Show ${project.title}`}
               className={`h-1.5 rounded-full transition-all ${
-                i === active ? "w-6 bg-white" : "w-1.5 bg-gray-500"
+                i === active ? "w-6 bg-black" : "w-1.5 bg-neutral-400"
               }`}
             />
           ))}

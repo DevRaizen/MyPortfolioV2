@@ -35,8 +35,8 @@ function CTA() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="border border-gray-300 shadow-lg p-5 rounded-xl transition-all duration-500 ease-in-out w-full h-[120px] flex flex-col justify-between">
-        <div className="opacity-100 transition-opacity duration-500">
+      <div data-fx className="fx-card border border-gray-300 shadow-lg p-5 rounded-xl w-full h-[120px] flex flex-col justify-between">
+        <div key={index} className="fx-swap">
           <div className="flex flex-row items-center gap-3 justify-between">
             <img
               src={current.img}
@@ -50,10 +50,10 @@ function CTA() {
         </div>
       </div>
 
-      <div className="flex flex-col border border-gray-300 shadow-lg p-3 rounded-lg">
+      <div data-fx className="fx-card flex flex-col border border-gray-300 shadow-lg p-3 rounded-lg">
         <span className="text-md font-bold mb-3">Development Activity</span>
           <img
-  src="https://github-readme-stats.vercel.app/api?username=DevRaizen&show_icons=true&hide_border=true&bg_color=FFFFFF&title_color=111827&text_color=4B5563&icon_color=3B82F6"
+  src="https://github-readme-stats.vercel.app/api?username=DevRaizen&show_icons=true&hide_border=true&bg_color=111111&title_color=FAFAFA&text_color=A3A3A3&icon_color=FAFAFA"
     alt="GitHub stats"
     className="w-full"
   />

@@ -3,13 +3,13 @@ import pikachu from "../assets/pikachu-pokemon.gif";
 import { SiGmail } from "react-icons/si";
 function Contact() {
   return (
-    <div className="contact p-4 border border-gray-300 shadow-lg rounded-lg">
+    <div data-fx className="contact fx-card p-4 border border-gray-300 shadow-lg rounded-lg">
       <div className="flex flex-row justify-between p-2">
         <h2 className="text-lg justify-center font-bold mt-1">Contact Me</h2>
         <img
           src={pikachu}
           alt="Pikachu GIF"
-          className="w-15 h-10 "
+          className="fx-hop w-15 h-10 "
         />
       </div>
 
@@ -19,7 +19,7 @@ function Contact() {
           href="https://github.com/devraizen"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 p-2 "
+          className="fx-link flex items-center gap-3 p-2"
         >
           <FaGithub className="text-xl" />
           <span>GitHub</span>
@@ -30,7 +30,7 @@ function Contact() {
           href="https://www.linkedin.com/in/shawn-bulos-60805518b/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 p-2 "
+          className="fx-link flex items-center gap-3 p-2"
         >
           <FaLinkedin className="text-xl text-black" />
           <span>LinkedIn</span>
@@ -41,7 +41,7 @@ function Contact() {
           href="https://www.facebook.com/shawn.bulos/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 p-2"
+          className="fx-link flex items-center gap-3 p-2"
         >
           <FaFacebook className="text-xl text-black" />
           <span>Facebook</span>
@@ -50,7 +50,7 @@ function Contact() {
         {/* Gmail */}
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=shawnbulos03@gmail.com"
-          className="flex items-center gap-3 p-2"
+          className="fx-link flex items-center gap-3 p-2"
         >
           <SiGmail className="text-xl text-black" />
           <span>Gmail</span>
