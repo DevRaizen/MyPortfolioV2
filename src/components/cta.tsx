@@ -4,9 +4,6 @@ import setup from "../assets/gallery-setup.jpg";
 import greenhouse from "../assets/gallery-greenhouse.jpg";
 import team from "../assets/gallery-team.jpg";
 
-//const EMAIL_LINK =
-  "https://mail.google.com/mail/?view=cm&fs=1&to=shawnbulos03@gmail.com";
-
 const photos = [
   { src: setup, label: "My setup", pos: "50% 50%" },
   { src: greenhouse, label: "Off the clock", pos: "30% 40%" },
@@ -117,8 +114,10 @@ function Gallery() {
 function CTA() {
   return (
     <div className="flex flex-col gap-4">
-      {/* Availability 
-     <div
+      {/* Availability card (disabled). To bring it back, uncomment it and
+          define EMAIL_LINK = "https://mail.google.com/mail/?view=cm&fs=1&to=you@example.com"
+      
+      <div
         data-fx
         className="fx-card border border-gray-300 shadow-lg p-5 rounded-xl w-full flex flex-col gap-3"
       >
@@ -139,7 +138,7 @@ function CTA() {
           Let&rsquo;s talk
         </a>
       </div>
-        */}
+      */}
 
       <Gallery />
     </div>

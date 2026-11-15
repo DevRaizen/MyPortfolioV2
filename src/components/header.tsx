@@ -1,4 +1,5 @@
 import CV from "../assets/Shawn Michael Bulos - FullStack CV.pdf"
+import ThemeToggle from "./themetoggle";
 function Header() {
   return (
     <div data-fx="down" className="header fx-card flex items-center justify-between mt-4 p-4 text-white mx-6  border border-gray-300 shadow-lg rounded-xl sm:rounded-lg  ">
@@ -13,14 +14,17 @@ function Header() {
           <li><a href="#contact" className="hover:underline">Contact</a></li>
         </ul>
       </nav>
-      <a
-        href={CV}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fx-mag fx-cv bg-neutral-100 hover:bg-neutral-300 font-bold py-2 px-4 rounded"
-      >
-        View CV
-      </a>
+      <div className="flex items-center gap-3">
+        <ThemeToggle />
+        <a
+          href={CV}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fx-mag fx-cv bg-neutral-100 hover:bg-neutral-300 font-bold py-2 px-4 rounded"
+        >
+          View CV
+        </a>
+      </div>
     </div>
   );
 }
