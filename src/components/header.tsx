@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
-import CV from "../assets/Shawn Michael Bulos - FullStack CV.pdf";
+import CV from "../assets/Shawn Michael Bulos - FullStack Developer CV.pdf";
 import ThemeToggle from "./themetoggle";
 
 const LINKS = [
