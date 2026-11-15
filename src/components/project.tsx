@@ -41,7 +41,7 @@ function Projects() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <div data-fx="right" className="fx-card border border-gray-300 shadow-lg pt-4 rounded-lg overflow-hidden">
+    <div id="project" data-fx="right" className="fx-card border border-gray-300 shadow-lg pt-4 rounded-lg overflow-hidden">
       <span className="text-lg text-black font-bold px-4">
         Featured Projects
       </span>

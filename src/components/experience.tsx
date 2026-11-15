@@ -9,7 +9,7 @@ export const jobs = [
 function Experience() {
  
   return (
-    <div data-fx className="fx-card border border-gray-300 shadow-lg pt-4 rounded-lg ">
+    <div id="experience" data-fx className="fx-card border border-gray-300 shadow-lg pt-4 rounded-lg ">
       <span className="text-lg text-black font-bold px-4">Experience</span>
       <div className="px-4 py-2">
        <ol className="fx-tl mt-5 ml-1.5">

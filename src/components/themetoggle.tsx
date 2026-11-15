@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useSyncExternalStore } from "react";
 import type { MouseEvent } from "react";
-import { flushSync } from "react-dom";
 import { FaDesktop, FaMoon, FaSun } from "react-icons/fa";
 
 type Mode = "light" | "dark" | "system";
@@ -56,17 +55,24 @@ media.addEventListener("change", () => {
   if (root.getAttribute("data-mode") === "system") paint("system");
 });
 
+// Every ThemeToggle on the page reads the same attribute, so they stay in sync.
+function subscribe(cb: () => void) {
+  const mo = new MutationObserver(cb);
+  mo.observe(root, { attributes: true, attributeFilter: ["data-mode"] });
+  return () => mo.disconnect();
+}
+function getMode(): Mode {
+  return (root.getAttribute("data-mode") as Mode) || DEFAULT_MODE;
+}
+
 function ThemeToggle() {
-  const [mode, setMode] = useState<Mode>(
-    () => (root.getAttribute("data-mode") as Mode) || DEFAULT_MODE
-  );
+  const mode = useSyncExternalStore(subscribe, getMode);
   const index = OPTIONS.findIndex((o) => o.id === mode);
 
   const choose = (next: Mode, e: MouseEvent<HTMLButtonElement>) => {
     if (next === mode) return;
     const doc = document as ViewTransitionDoc;
     if (!doc.startViewTransition) {
-      setMode(next);
       save(next);
       return;
     }
@@ -80,7 +86,6 @@ function ThemeToggle() {
     );
     doc
       .startViewTransition(() => {
-        flushSync(() => setMode(next));
         save(next);
       })
       .ready.then(() => {

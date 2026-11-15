@@ -9,7 +9,7 @@ export const stackItems = {
 function Stack() {
   let c = 0;
   return (
-    <div data-fx className="fx-card fx-stk border border-gray-300 shadow-lg pt-4 rounded-lg ">
+    <div id="stack" data-fx className="fx-card fx-stk border border-gray-300 shadow-lg pt-4 rounded-lg ">
       <span className="text-lg text-black font-bold px-4">My Stack</span>
       <div className="px-4 py-2">
         {Object.entries(stackItems).map(([category, technologies]) => (
