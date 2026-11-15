@@ -57,7 +57,7 @@ function Projects() {
       >
         {projects.map((project) => (
           <SwiperSlide className="cursor-pointer" key={project.id}>
-            <a href={project.link} className="p-4 rounded-lg grid grid-cols-2 gap-4">
+            <a href={project.link} className="p-4 rounded-lg grid sm:grid-cols-2 gap-4">
               <div className="fx-shot w-full h-48 overflow-hidden rounded-md">
                 <img
                   src={project.img}
